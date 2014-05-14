@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<% if (!user) { %>
+<div class="hero-unit">
+  <h1>欢迎来到Microblog</h1>
+  <p>Microblog 是一个基于Node.js的微博(---Ann)</p>
+  <p>
+  <a class="btn btn-primary btn-large" href="/login">登录</a>
+  <a class="btn btn-large" href="/reg">立即注册</a>
+  </p>
+</div>
+<% } else { %>
+  <%- partial('say') %>
+  <% } %>
+  <%- partial('posts', {posts:posts}) %>
+
+<div class="row">
+  <div class="span4">
+    <h2>Carbo 说</h2>
+    <p>欢迎来到楼顶，东风破早梅 向暖一枝开 冰雪无人见 。。。。。。。自己猜去</p>
+  </div>
+  <div class="span4">
+    <h2>BYVoid 说</h2>
+    <p>
+    啊上课废话说的就是的vjkdshvdskvhdsvkdvhskid上课地方是
+    打开后多少款额的风景igvhksvivgjgoisv isj哦地方if
+    iw哦呜哦午饭ogorguvjoiroegi为owigj 
+    owgowig oigvhf 哦放低哦减肥
+    </p>
+  </div>
+  <div class="span4">
+    <h2>Ann 说</h2>
+    <p>
+    在一般模式之中，只要按下 i, o, a 等字符就可以进入编辑
+    模式了！在编辑模式当中，你可以发现在左下角状态栏中会出现
+    –INSERT- 的字样，那就是可以输入任意字符的提示啰！这个时候
+    ，键盘上除了 [Esc] 这个按键之外，其他的按键都可以视
+    作为一般的输入按钮了，所以你可以进行任何的编辑啰！
+    </p>
+  </div>
+  </div>
